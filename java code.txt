@@ -1,0 +1,887 @@
+1. variable and output
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x = 7;
+		float y = (float) 7.50;
+		double z = 8.00;
+		char me = 'A';
+		boolean b = true;
+		
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println(z);
+		System.out.println(me);
+		System.out.println(b);
+
+
+	}
+
+}
+
+2. Take input integer number from user and show output
+
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+        System.out.print("enter number : ");
+        int x = scan.nextInt();
+        System.out.print("The number is : ");
+        System.out.print(x);
+
+	}
+
+}
+
+3.Take input double number from user and show output
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+        System.out.print("enter number : ");
+        double x = scan.nextDouble();
+        System.out.print("The number is : ");
+        System.out.print(x);
+
+	}
+
+}
+
+4. Take input string from user and show output
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner(System.in);
+        System.out.print("enter string : ");
+        String x = scan.nextLine();
+        System.out.print("The string is : ");
+        System.out.print(x);
+
+	}
+
+}
+
+#.....(1,2,3,4 all in one)....
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan = new Scanner (System.in);
+		System.out.print("Enter integer number : ");
+		int x = scan.nextInt();
+		System.out.println("Entered number "+x);
+		
+		Scanner scan1 = new Scanner (System.in);
+		System.out.print("Enter float number : ");
+		float y = (float)scan1.nextFloat();
+		System.out.println("Entered number "+ y);
+		
+		Scanner scan2 = new Scanner (System.in);
+		System.out.print("Enter double number : ");
+		double z = scan2.nextDouble();
+		System.out.println("Entered number "+z);
+		
+		Scanner scan3 = new Scanner (System.in);
+		System.out.print("Enter a string : ");
+		String p = scan3.nextLine();
+		System.out.println("Entered string "+p);
+		
+	}
+
+}
+
+5. Do summation,substraction, multiplication, division
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x,y,sum,sub,mul,div;
+		x=20;
+		y=5;
+		sum = x+y;
+		sub = x-y;
+		mul = x*y;
+		div = x/y;
+        System.out.println("summation = "+sum);
+        System.out.println("substraction = "+sub);
+        System.out.println("multiplication = "+mul);
+        System.out.println("division = "+div);
+
+	}
+
+}
+#............
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x,y,sum,sub,mul,div,rem;
+		x=10;
+		y=3;
+		sum = x+y;
+		sub = x-y;
+		mul = x*y;
+		div = x/y;
+		rem = x%y;
+        System.out.println("summation = "+sum);
+        System.out.println("substraction = "+sub);
+        System.out.println("multiplication = "+mul);
+        System.out.println("division = "+div);
+        System.out.println("remaining = "+rem);
+	}
+
+}
+#............
+
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x,y,sum,sub,mul;
+		float div,rem;
+		x=10;
+		y=3;
+		sum = x+y;
+		sub = x-y;
+		mul = x*y;
+		div = (float)x/y;
+		rem = (float)x%y;
+        System.out.println("summation = "+sum);
+        System.out.println("substraction = "+sub);
+        System.out.println("multiplication = "+mul);
+        System.out.println("division = "+div);
+        System.out.println("remaining = "+rem);
+	}
+
+}
+
+#........(do mathematical operation after taking input)....
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	Scanner scan = new Scanner (System.in);
+	Scanner scan1 = new Scanner (System.in);
+	double x ,y,sum,sub,mul,div,rem ;
+	System.out.print("enter first value : ");
+	x = scan.nextDouble();
+	System.out.print("enter second value : ");
+	y= scan1.nextDouble();
+	sum=x+y;
+	sub=x-y;
+	mul= x*y;
+	div= x/y;
+	rem= x%y;
+	System.out.println("summation = "+ sum);
+	System.out.println("substraction = "+ sub);
+	System.out.println("multiplication = "+ mul);
+	System.out.println("division = "+ div);
+	System.out.println("remaining = "+ rem);
+	}
+
+}
+
+
+6. ...incremental operation...
+
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+     int x=10;
+     System.out.println(x);
+     System.out.println(x++);
+     System.out.println(x);
+     
+     int y= 20;
+     System.out.println(y++);
+     System.out.println(y);
+     System.out.println(++y);
+     
+     int z= 30;
+     System.out.println(++z);
+     System.out.println(z++);
+     System.out.println(z);
+     
+     System.out.println(x-=5);
+     System.out.println(y+=5);
+     System.out.println(z/=2);
+
+     System.out.println(--x);
+     System.out.println(y--);
+     System.out.println(z%2);
+
+	}
+
+}
+
+
+7. ...Conditional statement...
+
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double x;
+		Scanner scan = new Scanner (System.in);
+		System.out.print("Enter the marks : ");
+		x=scan.nextDouble();
+		
+		if(x<50) {
+			System.out.print("Grade : F");
+		}
+		else {
+			if(x<60) {
+				System.out.print("Grade : C ");
+			}
+			else {
+				if(x<70){
+					System.out.print("Grade : B");
+				}
+				else {
+					if(x<80) {
+						System.out.print("Grade : A");
+					}
+					else {
+						System.out.print("Grade : A+");
+					}
+					}
+				}
+			}
+		}
+    
+	}
+
+
+8... Switch Case...
+
+import java.util.Scanner;
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x;
+		Scanner scan = new Scanner (System.in);
+		System.out.print("Enter marks (round) : ");
+		x=scan.nextInt();
+		
+		switch(x) {
+		case 90 :
+			System.out.print("Very Good ");
+			break;
+		case 80 :
+			System.out.print("Good");
+			break;
+		case 70 :
+			System.out.print("well");
+			break;
+		case 60 :
+			System.out.print("not satisfactory");
+			break;
+		case 50 :
+			System.out.print("must improve");
+			break;
+		default :
+			System.out.print("bad");
+			break;
+		}
+		
+		}
+}
+    
+
+9...while(print 5-1)
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int x=5;
+		while(x>0) {
+			System.out.println(x);
+			x--;
+		}
+		}
+}
+    
+10...observe the difference between while and do_while loop...
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int x=0;
+		while(x==-1) {
+			System.out.println("x="+x);
+			x++;
+		}
+
+		int y=0;
+		do {
+			System.out.println("y="+y);
+			y++;
+		}while(y==-1);
+	}
+}
+   
+11...Array declaration and print element using while...
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] array= {1,2,3,4,5};
+		/*
+		 * int array[] = {1,2,3,4,5};
+		 * int[] array = new int[5];
+		 * int[] array = new int[] {1,2,3,4,5}
+		 */
+		int index=0;
+		while(index<=4) {
+			System.out.println(array[index]);
+			index++;
+		}
+	}
+}
+ 
+12....Array declaration and print element using for...   
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] array= {1,2,3,4,5};
+		
+		for(int index=0;index<5;index++) {
+			System.out.println(array[index]);
+		}
+		
+		}
+	}
+    
+
+#......Special way....
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int[] array= {1,2,3,4,5};
+		
+		for(int element: array) {
+			System.out.println(element);
+		}
+		
+		}
+	}
+
+
+13...knowing the functions using string..
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String A="Chowdhury,"+"Ashiqul";
+		String B=" Hoque";
+		String D=B;
+		String E="  ";
+		System.out.println(A);
+		System.out.println(B);
+		String C= A.concat(B);
+		System.out.println(C);
+		int length=C.length();
+		System.out.println("length of your name = "+length);
+		System.out.println(C.contains(",Ash"));
+		System.out.println(C.contains(B));
+		System.out.println(A.contains(B));
+		System.out.println("-------");
+		System.out.println(B.contentEquals(" Hoque"));
+		System.out.println(B.contentEquals(C));
+		System.out.println("-------");
+		System.out.println(B.endsWith("que"));
+		System.out.println(C.endsWith(B));
+		System.out.println("-------");
+		System.out.println(B.equals(A));
+		System.out.println(B.equals(" Hoque"));
+   	    System.out.println("-------");
+		System.out.println(B.equalsIgnoreCase(" HOQUE"));
+		System.out.println(B.equalsIgnoreCase("HOQUE"));
+		System.out.println(B.hashCode());
+		System.out.println(B.indexOf('q'));
+		System.out.println(E.isBlank());
+		System.out.println(E.isEmpty());
+		System.out.println(B.isBlank());
+		System.out.println(C.lastIndexOf("H"));
+		System.out.println(C.lastIndexOf("h"));
+		System.out.println(A.matches(B));
+		System.out.println(C.repeat(3));
+		System.out.println(C.replace('h', 'p'));
+		System.out.println(C.replace("ho", "xy"));
+		System.out.println(C.startsWith("Ch"));
+		System.out.println(C.startsWith("Ca"));
+        System.out.println(C.startsWith("dh", 4));
+        System.out.println(C.startsWith("dh", 0));
+        System.out.println(C.substring(10));
+        System.out.println(C.substring(10, 15));
+        System.out.println(C.toUpperCase());
+        System.out.println(C.toLowerCase());
+		
+		}
+	}
+    
+#... convert String into array..
+
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String B="Hoque";
+		
+        char[] X = B.toCharArray();
+        for( char element : X) {
+        	System.out.println(element);
+        }
+        
+		}
+	}
+    
+#...analyzing strip function in string...
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String F="    H o q u e     ";
+        
+        String P=F.strip();
+        char [] p =P.toCharArray();
+        for( char element : p) {
+        	System.out.print(element);
+        }
+        System.out.println("-----");
+        
+         P=F.stripLeading();
+         p =P.toCharArray();
+        for( char element : p) {
+        	System.out.print(element);
+        }
+        System.out.println("-----");
+        
+        P=F.stripTrailing();
+        p =P.toCharArray();
+       for( char element : p) {
+       	System.out.print(element);
+       }
+       System.out.println("-----");
+        
+		
+		}
+	}
+
+#...analyzing trim function in string...  
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String X ="      A s h i q     ";
+		System.out.print(X.trim());
+		System.out.print("finish");
+        
+		
+		}
+	}
+
+14..Function declaration in java...
+
+	public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		my_function();
+	}
+	public static void my_function() {
+		System.out.println("Function declaration");
+	}
+}	
+
+15...function with parameter...
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 my_function(7,9);
+		 System.out.print(add(7,9));
+	}
+	public static void my_function(int x, int y) {
+		System.out.println(x+y);
+	}
+	public static int add (int x, int y) {
+		return x+y;
+		
+	}
+}
+
+16....Class declaration....
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	SecondClass class1=new SecondClass();	
+	
+		class1.id =100;
+		class1.age=20;
+		class1.name= "Ssh";
+		System.out.println(class1.age+class1.name+class1.id);
+	}
+}
+
+-------------------
+public class SecondClass {
+int id;
+String name;
+int age;
+}
+
+####################### Another way ####
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	SecondClass class1=new SecondClass();	
+	
+		class1.setAge(20);
+		class1.setId(100);
+		class1.setName("Ashiq");
+		System.out.println(class1.getAge()+class1.getName()+class1.getId());
+	}
+}
+
+----------------
+
+public class SecondClass {
+int id;
+String name;
+int age;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+
+}
+
+
+17.....Constructor in java.........
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+	SecondClass class1=new SecondClass();	
+	System.out.println(class1.area());
+	
+	SecondClass class2= new SecondClass(10,10);
+	System.out.println(class2.area());
+	}
+}
+
+-----------------
+
+
+public class SecondClass {
+int length;
+int width;
+public  int area() {
+	return length * width;
+}
+
+SecondClass(){
+	length=10;
+	width=5;
+}
+
+SecondClass(int l, int w){
+	length=l;
+	width=w;
+}
+
+}
+
+
+18....Function overloading in java......
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	System.out.println(add(10,20));
+	System.out.println(add(5.250,14.250));
+	System.out.println(add("hello ","world!!!"));
+	
+	}
+	public static int add(int a,int b) {
+		return a+b;
+	}
+	public static double add(double a,double b) {
+		return a+b;
+	}
+	public static String add(String a,String b) {
+		return a+b;
+	}
+}
+
+
+19....use of satic method in java.....
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//Static members belong to class instead of a specific instance
+		
+		System.out.println(SecondClass.message("Static"));
+		SecondClass class2= new SecondClass();
+		System.out.println(class2.note("non- Static"));
+		System.out.println(SecondClass.x);
+		System.out.println(class2.y);
+	}
+	
+}
+
+---------
+
+public class SecondClass {
+    static int x=5;
+    int y=4;
+   
+	public static String message(String a) {
+		return a ;	
+	}
+	public String note(String a) {
+		return a;		
+	}
+}
+
+
+20.....i love java..........
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	//Static members belong to class instead of a specific instance
+	Student ayesha = new Student();
+	ayesha.setName("Ayesha");
+	ayesha.setAge(9);;
+	ayesha.setRoll(1);;
+	
+	System.out.println("Roll "+ayesha.getRoll()+". " +ayesha.getName()+ " is " +ayesha.getAge()+ " years old");
+	
+	Student tasin = new Student();
+	tasin.setName("Tasin");
+	tasin.setAge(17);;
+	tasin.setRoll(2);;
+	
+	System.out.println("Roll "+tasin.getRoll()+". " +tasin.getName()+ " is " +tasin.getAge()+ " years old");
+	
+	Student shihan = new Student();
+	shihan.setName("Shihan");
+	shihan.setAge(21);;
+	shihan.setRoll(3);;
+	
+	System.out.println("Roll "+shihan.getRoll()+". " +shihan.getName()+ " is " +shihan.getAge()+ " years old");
+	
+	
+	
+	
+	System.out.println("number of student is "+Student.noofstudent);
+	
+			}
+	
+}
+
+------------
+
+
+public class Student {
+private int roll;
+private String name;
+private int Age;
+static int noofstudent=0;
+Student(){
+	noofstudent++;
+}
+public int getRoll() {
+	return roll;
+}
+public void setRoll(int roll) {
+	this.roll = roll;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getAge() {
+	return Age;
+}
+public void setAge(int age) {
+	this.Age = age;
+}
+
+}
+
+
+#### Things to know ####
+
+Acess levels
+Modifiers   Class    Package   Sub-class    World
+1.public      Y        Y          Y           Y
+2.protected   Y        Y          Y           N
+3.No modifier Y        Y          N           N
+4.Private     Y        N          N           N
+
+
+
+****** use of "final" keyword *******
+A final variable can only be initialized once
+A final class can not be subclassed
+A final method can not be overriden by subclasses
+
+
+
+21....inheritance in java........
+
+public class Myclass {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+triangle tri = new triangle ();
+rectangle rec = new rectangle ();
+tri.setvalues(10, 10);
+rec.setvalues(10, 10);
+
+System.out.println(tri.tri());
+System.out.println(rec.rec());
+			
+	}	
+}
+
+--------------
+
+
+public class pollygon {
+	protected int height;
+	protected int width;
+ public void setvalues(int a, int b) {
+	 height=a;
+	 width=b;
+ }
+	
+}
+
+
+---------
+
+public class triangle extends pollygon {
+	
+public double tri(){
+	
+	return (height * width)/2;	
+}
+}
+
+--------
+
+
+public class rectangle extends pollygon{
+
+
+public  double rec() {
+	
+	return (height * width);	
+}
+}
